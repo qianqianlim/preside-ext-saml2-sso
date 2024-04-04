@@ -87,7 +87,7 @@ component extends="preside.system.base.EnhancedDataManagerBase" {
 
 		if ( isFeatureEnabled( "samlSsoProviderSlo" ) ) {
 			data.single_logout_location = meta.serviceProviderSsoRequirements.logoutService.location ?: "";
-			data.single_logout_binding  = ListLast( meta.serviceProviderSsoRequirements.logoutService.binding ?: "" );
+			data.single_logout_binding  = ListLast( meta.serviceProviderSsoRequirements.logoutService.binding ?: "", ":" );
 		}
 
 		if ( !_validateMeta( argumentCollection=arguments, objectName="saml2_sp", data=data ) ) {

@@ -1,5 +1,10 @@
 # Changelog
 
+## v6.0.2
+
+* Fix issue where Service provider single logout binding was taking too much space in DB and failing db migration
+* Give data migration a name to ensure it happens sooner rather than later during db migration routines
+
 ## v6.0.1
 
 * Fix issue where organisation short name setting containing spaces would crash server on certificate generation

@@ -6,7 +6,11 @@ component {
 	property name="saml2LegacyMigrationService" inject="saml2LegacyMigrationService";
 
 	private boolean function runAsync() {
-		saml2LegacyMigrationService.migrate();
+		var alreadyRun = getPresideObject( "db_migration_history" ).dataExists( filter={ migration_key="Saml6Overhaul-async" } );
+
+		if ( !alreadyRun ) {
+			saml2LegacyMigrationService.migrate();
+		}
 
 		return true;
 	}
