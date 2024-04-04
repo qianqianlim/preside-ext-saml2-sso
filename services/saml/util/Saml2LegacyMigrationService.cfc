@@ -123,7 +123,7 @@ component {
 
 		if ( $isFeatureEnabled( "samlSsoProviderSlo" ) ) {
 			newSp.single_logout_location = meta.serviceProviderSsoRequirements.logoutService.location ?: "";
-			newSp.single_logout_binding  = ListLast( meta.serviceProviderSsoRequirements.logoutService.binding ?: "" );
+			newSp.single_logout_binding  = ListLast( meta.serviceProviderSsoRequirements.logoutService.binding ?: "", ":" );
 		}
 
 		return newSp;
