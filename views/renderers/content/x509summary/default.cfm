@@ -18,7 +18,7 @@
 				</tr>
 				<tr>
 					<th style="vertical-align:top">#translateResource( "saml2:x509.info.table.issuer.th")#</th>
-					<td style="vertical-align:top"><code>#args.certInfo.issuer#</code></td>
+					<td style="vertical-align:top">#args.certInfo.issuer#</td>
 				</tr>
 				<tr>
 					<th style="vertical-align:top">#translateResource( "saml2:x509.info.table.certificate.th")#</th>

@@ -1,5 +1,9 @@
 # Changelog
 
+## v6.0.3
+
+* Stop rendering cert issuers in <code> tags (which can cause layout overflow issues with long issuer strings)
+
 ## v6.0.2
 
 * Fix issue where Service provider single logout binding was taking too much space in DB and failing db migration
