@@ -1,5 +1,9 @@
 # Changelog
 
+## v6.0.4
+
+* Allow configurable AuthnContext for SSO requests to IdPs where Preside is the SP.
+
 ## v6.0.3
 
 * Stop rendering cert issuers in <code> tags (which can cause layout overflow issues with long issuer strings)
