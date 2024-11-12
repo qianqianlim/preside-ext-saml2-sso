@@ -1,5 +1,9 @@
 # Changelog
 
+## v6.0.6
+
+* Github build fixes
+
 ## v6.0.5
 
 * [#21](https://github.com/pixl8/preside-ext-saml2-sso/issues/21) Fix preside version dependency declaration
