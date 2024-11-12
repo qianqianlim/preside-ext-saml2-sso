@@ -1,5 +1,9 @@
 # Changelog
 
+## v6.0.5
+
+* [#21](https://github.com/pixl8/preside-ext-saml2-sso/issues/21) Fix preside version dependency declaration
+
 ## v6.0.4
 
 * Allow configurable AuthnContext for SSO requests to IdPs where Preside is the SP.

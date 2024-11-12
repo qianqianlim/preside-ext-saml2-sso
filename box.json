@@ -35,6 +35,6 @@
         "runner":"http://127.0.0.1:4664/runtests.cfm"
     },
     "preside":{
-        "minVersion":"10.24.0"
+        "minVersion":"10.25.0"
     }
 }
